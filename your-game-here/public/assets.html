@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Game Here - Game Assets</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1><span id="game-name">Game Name</span></h1>
+        <a href="index.html" id="back-button">Back to Library</a>
+    </header>
+    <main>
+        <section id="assets-grid">
+            <!-- game assets -->
+        </section>
+    </main>
+    <script>
+        // get the game name from the url
+        const urlParams = new URLSearchParams(window.location.search);
+        const gameName = urlParams.get('game');
+
+        // set the game name to header
+        const gameNameElement = document.getElementById('game-name');
+        if (gameName) {
+            gameNameElement.textContent = gameName.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase()); // make the first character uppercase
+        } else {
+            gameNameElement.textContent = "Unknown Game"; // if game name is not found
+        }
+    </script>
+</body>
+</html>
