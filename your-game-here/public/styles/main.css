@@ -21,13 +21,14 @@ h1 {
     color: #ffffff;
 }
 
-#search-bar {
+/* not implemented yet */
+/* #search-bar {
     padding: 0.5rem;
     border: 1px solid #3c3c3c;
     border-radius: 4px;
     background-color: #2d2d2d;
     color: #ffffff;
-}
+} */
 
 .container {
     width: 80%;
@@ -142,8 +143,8 @@ h1 {
     background-color: #005f99;
 }
 
-/* Grid layout for assets 
-Might change when assets are correctly set up*/
+/* grid layout for assets 
+might change when assets are correctly set up*/
 #assets-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -172,7 +173,6 @@ Might change when assets are correctly set up*/
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Add some basic styles for the asset grid */
 #assets-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -208,4 +208,13 @@ Might change when assets are correctly set up*/
 
 .asset-card button:hover {
     background-color: #0056b3;
+}
+
+/* description box to be hidden */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
 }
